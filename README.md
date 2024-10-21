@@ -41,22 +41,32 @@ Basic system monitoring using Netdata and automatic load testing on a Linux syst
 
 ## How to Run
 
-1. **Install Netdata:**
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/julieboysen/simple-monitoring.git
+   ```
+2. Make the scripts executables:
+   ```
+   chmod +x setup.sh test_dashboard.sh cleanup.sh
+   ```
+
+3. **Install Netdata:**
 
    ```
    sudo ./setup.sh
    ```
 
-2. **Test the Dashboard:**
+4. **Test the Dashboard:**
 
    ```
    sudo ./test_dashboard.sh
    ```
 
-3. **Access the Netdata Dashboard:**
+5. **Access the Netdata Dashboard:**
    Open your browser and open `http://<your-ip>:19999` to monitor the system.
 
-4. **Cleanup:**
+6. **Cleanup:**
    ```
    sudo ./cleanup.sh
    ```
